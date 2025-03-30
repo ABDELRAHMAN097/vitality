@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import EducationSection from "./EducationSection";
 
 export const Contact = () => {
@@ -34,6 +35,35 @@ export const Contact = () => {
       subtitle: "our courses",
     },
   ];
+
+  const [activeTab, setActiveTab] = useState<number | null>(null);
+
+  const faqItems = [
+    {
+      question: "Can I interact with instructors and other students?",
+      answer: ""
+    },
+    {
+      question: "What if I need help during the course?",
+      answer: ""
+    },
+    {
+      question: "Are there any prerequisites for enrolling in a course?",
+      answer: ""
+    },
+    {
+      question: "Can I get a refund if I'm not satisfied with the course?",
+      answer: ""
+    },
+    {
+      question: "Will I receive a certificate upon completion?",
+      answer: "Yes, upon successful completion of a course, you will receive a certificate that you can download and share. The certificate verifies"
+    }
+  ];
+
+  const toggleTab = (index: number) => {
+    setActiveTab(activeTab === index ? null : index);
+  };
 
   return (
     <div
@@ -85,8 +115,57 @@ export const Contact = () => {
           </div>
 
           <EducationSection />
+          
         </div>
+
       </div>
+
+      {/*  */}
+
+
+        <div className="w-full flex flex-col items-center justify-center gap-5 py-8 md:py-10 my-5 md:my-10">
+            <h3 className="text-[#190C71] font-semibold text-center md:text-start text-xl md:text-5xl">Frequently Asked Questions</h3>
+            <p className="text-center text-slate-500 text-2x mx-1 md:mx-5">Pursue your problems with our diverse range of courses focused on lifestyle and holidays. From existing and gardening to photograph travel, our courses provide practical tips and inspiration for enjoying life to the future. Whether you re looking to develop a new hobby</p>
+        </div>
+
+
+        {/*  */}
+
+
+        <div className="w-full mx-auto py-8 px-4">
+      <h2 className="text-3xl font-bold text-[#190C71] mb-8 text-center">
+        Frequently Asked Questions
+      </h2>
+      
+      <div className="space-y-4">
+        {faqItems.map((item, index) => (
+          <div 
+            key={index}
+            className="border border-[#D0DAF5] rounded-lg overflow-hidden"
+          >
+            <button
+              className={`w-full flex justify-between items-center p-4 text-left ${activeTab === index ? 'bg-[#F5F8FF]' : 'bg-white'}`}
+              onClick={() => toggleTab(index)}
+            >
+              <span className="text-lg font-semibold text-[#360099]">
+                {item.question}
+              </span>
+              <span className="text-[#6f55f2] font-bold">
+                {activeTab === index ? '−' : '+'}
+              </span>
+            </button>
+            
+            {activeTab === index && (
+              <div className="p-4 bg-[#F5F8FF] text-gray-700 border-t border-[#D0DAF5]">
+                {item.answer || (
+                  <p className="text-gray-500">سيتم إضافة الإجابة قريباً</p>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
     </div>
   );
 };
