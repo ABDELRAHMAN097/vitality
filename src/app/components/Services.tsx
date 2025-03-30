@@ -31,7 +31,7 @@ export const Services = () => {
     <div id="Services" className="flex flex-col items-center justify-center gap-10 relative w-full min-h-screen my-10 md:my-2">
       <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
-        <div className="flex flex-col md:flex-row items-center justify-center px-2 md:px-7 w-full relative z-50">
+        <div className="flex flex-col md:flex-row items-center justify-center px-2 md:px-7 w-full relative z-30">
           <div className='w-full flex flex-col items-center md:items-start justify-center gap-2 border-red-500 my-10 md:my-2'>
             <h2 className="text-[#190C71] text-center md:text-start font-semibold text-xl md:text-5xl">
             Innovative Online<br className="hidden md:inline" />Learning Solutions

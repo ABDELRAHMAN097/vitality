@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
   imageHeight = 100 
 }) => {
   return (
-    <div className="w-full max-w-[380px] h-[350px] flex flex-col justify-center items-center mx-auto bg-white rounded-xl py-5 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+    <div className="w-full max-w-[330px] md:max-w-[380px] h-[350px] mx-2 md:mx-0 mt-4 md:mt-0 flex flex-col justify-center items-center bg-white rounded-xl  border border-[#190C71] py-5 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">
       <div className="relative w-full h-[150px]">
         <Image
           src={imageUrl}

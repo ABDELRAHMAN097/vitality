@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
-      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-50">
+      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-30">
         <div className="w-full flex flex-col gap-5 md:gap-10 py-10 md:py-2">
           <div className="p-2 bg-[#D0DAF5] max-w-[280px] mx-auto md:mx-0 rounded-2xl">
             <p className="text-[#360099] text-center md:text-start font-medium">
@@ -41,7 +41,8 @@ const Hero = () => {
           <Image
             src="/assets/img/Right Photo.png"
             alt="Online Training Illustration"
-            
+            width={800}
+            height={800}
             className="w-full h-auto"
           />
         </div>

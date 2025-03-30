@@ -6,13 +6,14 @@ export const About = () => {
     <div id='About' className="flex flex-col items-center justify-center relative w-full min-h-screen my-10 md:my-2">
       <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
-      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-50">
+      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-30">
        
       <div className="w-full flex items-center justify-center gap-2 overflow-hidden p-1">
           <Image
             src="/assets/img/p.png"
             alt="Online Training Illustration"
-            
+            width={500}
+            height={500}
             className="w-full h-auto"
           />
         </div>

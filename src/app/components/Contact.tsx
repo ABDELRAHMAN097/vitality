@@ -42,7 +42,7 @@ export const Contact = () => {
     >
       <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
-      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-50">
+      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-30">
         <div className="w-full flex items-center justify-start my-10 md:my-2">
           <div className="grid grid-cols-2 gap-6">
             {statsData.map((item, index) => (

@@ -9,21 +9,20 @@ import Link from "next/link";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // دالة لإغلاق القائمة عند النقر على رابط
   const handleNavLinkClick = () => {
     setIsOpen(false);
   };
 
   return (
-    <nav className="flex justify-between items-center p-4 shadow-md w-full bg-white">
+    <nav className="flex justify-between items-center p-4 shadow-md w-full bg-white relative z-50">
       {/* Logo */}
-      <div>
-        <Image src="/assets/img/logo.png" alt="logo" height={150} width={150}/>
+      <div className="z-50">
+        <Image src="/assets/img/logo.png" alt="logo" height={150} width={150} priority />
       </div>
 
-      {/* Menu Button (for small screens) */}
+      {/* Menu Button */}
       <button
-        className="md:hidden text-2xl"
+        className="md:hidden text-2xl z-50"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
@@ -32,14 +31,18 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <ul
-        className={`md:flex justify-center items-center gap-6 absolute md:static left-0 top-16 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 transition-all duration-300 z-50 shadow-md md:shadow-none ${
+        className={`md:flex justify-center items-center gap-6 absolute md:static left-0 top-full w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 transition-all duration-300 z-40 shadow-lg md:shadow-none ${
           isOpen ? "block" : "hidden"
         }`}
+        style={{ 
+          backgroundColor: 'rgba(255, 255, 255, 0.98)',
+          backdropFilter: 'blur(10px)'
+        }}
       >
         <li>
           <a 
             href="#Hero" 
-            className="hover:text-[#6f55f2] font-semibold mt-4 md:mt-0 block md:inline" 
+            className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline" 
             onClick={handleNavLinkClick}
           >
             Home
@@ -48,38 +51,35 @@ const Navbar = () => {
         <li>
           <a 
             href="#About" 
-            className="hover:text-[#6f55f2] font-semibold mt-4 md:mt-0 block md:inline" 
+            className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline" 
             onClick={handleNavLinkClick}
           >
-            About
+            Courses ▼
           </a>
         </li>
         <li>
           <a 
             href="#Services" 
-            className="hover:text-[#6f55f2] font-semibold mt-4 md:mt-0 block md:inline" 
+            className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline" 
             onClick={handleNavLinkClick}
           >
-            Services
+            States Approved
           </a>
         </li>
         <li>
           <a 
             href="#Contact" 
-            className="hover:text-[#6f55f2] font-semibold mt-4 md:mt-0 block md:inline" 
+            className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline" 
             onClick={handleNavLinkClick}
           >
-            Contact
+            Support
           </a>
         </li>
-        <li className="mt-4 md:mt-0 md:max-ml-[400px]">
-          <Link href="../auth/login.tsx">
-          <button 
-            className="bg-[#6f55f2] hover:bg-[#9785f2] text-white px-4 py-2 rounded-md w-full md:w-auto flex items-center justify-center"
-            onClick={handleNavLinkClick}
-          >
-            Join for free <FaUserPlus className="ml-5"/>
-          </button>
+        <li className="mt-2 md:mt-0 md:ml-4">
+          <Link href="/auth/login" passHref legacyBehavior>
+            <a className="bg-[#6f55f2] hover:bg-[#9785f2] text-white px-4 py-2 rounded-md inline-flex items-center justify-center">
+              Join for free <FaUserPlus className="ml-2" />
+            </a>
           </Link>
         </li>
       </ul>
