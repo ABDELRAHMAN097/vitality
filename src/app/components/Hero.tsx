@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -37,7 +38,7 @@ const Hero = () => {
         </div>
 
         <div className="w-full flex items-center justify-center gap-2 overflow-hidden">
-          <img
+          <Image
             src="/assets/img/Right Photo.png"
             alt="Online Training Illustration"
             

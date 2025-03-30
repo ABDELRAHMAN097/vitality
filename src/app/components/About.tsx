@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export const About = () => {
@@ -8,7 +9,7 @@ export const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-50">
        
       <div className="w-full flex items-center justify-center gap-2 overflow-hidden p-1">
-          <img
+          <Image
             src="/assets/img/p.png"
             alt="Online Training Illustration"
             
