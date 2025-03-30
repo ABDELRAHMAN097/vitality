@@ -1,0 +1,23 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --font-name: "Questrial", sans-serif;
+ 
+}
+
+:root {
+  --primary-color: #6f55f2;
+  --heading-color: #132742;
+  /* 
+        #9785f2
+        #b5a9f3
+        #d3cef2
+        #d7337a
+    */
+}
