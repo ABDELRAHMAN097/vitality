@@ -72,13 +72,13 @@ export const Contact = () => {
     >
       <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
-      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-30">
-        <div className="w-full flex items-center justify-start my-10 md:my-2">
+      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full my-12 relative z-30">
+        <div className="w-full flex items-center justify-center my-10 md:my-2">
           <div className="grid grid-cols-2 gap-6">
             {statsData.map((item, index) => (
               <div
                 key={index}
-                className="p-4 bg-white shadow-md rounded-xl text-center"
+                className="p-7 bg-white shadow-md border border-[#360099] rounded-xl text-center"
               >
                 <h2 className="text-2xl font-bold text-[#360099]">
                   {item.value}
@@ -101,7 +101,7 @@ export const Contact = () => {
           <h3 className="text-[#190C71] font-semibold text-center md:text-start text-xl md:text-5xl">
             Flexible Online Courses for Busy Professionals
           </h3>
-          <p className="text-center md:text-start text-slate-500 text-2x">
+          <p className="text-center md:text-start text-slate-500 text-xl md:text-xl">
             Balancing work life and education has never been easier with our
             flexible online courses designed for busy professionals. Access
             high-quality content and interactive lessons from any device anytime
@@ -109,7 +109,13 @@ export const Contact = () => {
           </p>
 
           <div className="flex items-center md:items-start justify-center md:justify-start gap-6">
-            <button className="md:block bg-[#360099] hover:bg-[#9785f2] text-white px-4 py-2 rounded-xl">
+          <button
+              className="hidden md:flex items-center justify-center bg-[#360099] text-white text-lg px-5 py-2.5 rounded-xl 
+             transition-all duration-300 ease-in-out 
+             hover:bg-[#9785f2] hover:shadow-lg 
+             focus:outline-none focus:ring-2 focus:ring-[#9785f2] focus:ring-offset-2 
+             active:scale-95"
+            >
               Get Started
             </button>
           </div>

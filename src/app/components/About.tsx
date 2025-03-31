@@ -12,9 +12,9 @@ export const About = () => {
           <Image
             src="/assets/img/p.png"
             alt="Online Training Illustration"
-            width={500}
-            height={500}
-            className="w-full h-auto"
+            width={560}
+            height={560}
+            className="h-auto"
           />
         </div>
 
@@ -23,12 +23,18 @@ export const About = () => {
         <h2 className="text-[#190C71] text-center md:text-start font-semibold text-xl md:text-5xl">
         The foundation of modern digital healthcare.
           </h2>
-          <p className="text-center md:text-start text-slate-500 text-2x">
+          <p className="text-center md:text-start text-slate-500 text-xl md:text-2xl">
            Hundreds of thousands of healthcare professionals. Millions of digital courses and programs. one goal:Equipping providers to enhance patient care.
           </p>
 
           <div className="flex items-center md:items-start justify-center md:justify-start gap-6">
-            <button className="md:block bg-[#360099] hover:bg-[#9785f2] text-white px-4 py-2 rounded-xl">
+          <button
+              className="hidden md:flex items-center justify-center bg-[#360099] text-white text-lg px-5 py-2.5 rounded-xl 
+             transition-all duration-300 ease-in-out 
+             hover:bg-[#9785f2] hover:shadow-lg 
+             focus:outline-none focus:ring-2 focus:ring-[#9785f2] focus:ring-offset-2 
+             active:scale-95"
+            >
               Get Started
             </button>
           </div>

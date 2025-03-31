@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center p-4 shadow-md w-full bg-white relative z-50">
       {/* Logo */}
       <div className="z-50">
-        <Image src="/assets/img/logo.png" alt="logo" height={150} width={150} priority />
+        <Image src="/assets/img/logo.png" alt="logo" height={170} width={170} priority />
       </div>
 
       {/* Menu Button */}
