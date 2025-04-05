@@ -85,16 +85,7 @@ const Footer = () => {
         <div className="border-t border-gray-300 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 text-center">
-              © {new Date().getFullYear()} Vitality All Rights Reserved. |
-              Developed by{" "}
-              <a
-                href="https://wa.me/201023671214"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#360099] font-semibold hover:underline"
-              >
-                Abdelrahman Magdy
-              </a>
+              © {new Date().getFullYear()} Vitality All Rights Reserved.
             </div>
 
             <div className="flex space-x-4">
