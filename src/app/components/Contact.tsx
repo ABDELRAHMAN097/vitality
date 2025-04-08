@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import EducationSection from "./EducationSection";
+import Link from "next/link";
 
 export const Contact = () => {
   const statsData = [
@@ -109,15 +110,21 @@ export const Contact = () => {
           </p>
 
           <div className="flex items-center md:items-start justify-center md:justify-start gap-6">
-          <button
-              className="hidden md:flex items-center justify-center bg-[#360099] text-white text-lg px-5 py-2.5 rounded-xl 
+          <Link
+              href="https://vitalitylab.thinkific.com/users/sign_up"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                className="hidden md:flex items-center justify-center bg-[#360099] text-white text-lg px-5 py-2.5 rounded-xl 
              transition-all duration-300 ease-in-out 
              hover:bg-[#9785f2] hover:shadow-lg 
              focus:outline-none focus:ring-2 focus:ring-[#9785f2] focus:ring-offset-2 
              active:scale-95"
-            >
-              Get Started
-            </button>
+              >
+                Get Started
+              </button>
+            </Link>
           </div>
 
           <EducationSection />
