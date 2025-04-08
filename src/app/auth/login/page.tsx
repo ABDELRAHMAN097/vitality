@@ -29,6 +29,7 @@ const Login = () => {
         formData.password
       );
       router.push('/');
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       switch (err.code) {
         case 'auth/invalid-email':

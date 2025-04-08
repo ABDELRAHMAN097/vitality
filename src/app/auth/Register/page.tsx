@@ -41,6 +41,7 @@ const Register = () => {
 
       
       router.push('/auth/login');
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       switch (err.code) {
         case 'auth/email-already-in-use':
