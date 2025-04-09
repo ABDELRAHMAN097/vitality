@@ -88,7 +88,7 @@ export const Services = () => {
             </p>
           </div>
           <p className="text-center md:text-start text-slate-500 text-xl md:text-xl my-10 md:my-2">
-            experience the future education with our cutting edge online learning platform innovative courses utilize the latest technology
+            Experience the future education with our cutting edge online learning platform innovative courses utilize the latest technology
           </p>
         </div>
       </div>
