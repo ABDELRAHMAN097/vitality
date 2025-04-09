@@ -16,21 +16,21 @@ export const Services = () => {
   // البيانات الافتراضية (الصور والنصوص الاحتياطية)
   const defaultCards = [
     {
-      imageUrl: '/assets/img/services03.png',
+      imageUrl: '/assets/img/head.png',
       title: 'Technology and Programming',
       description: 'Dive into the world of technical comprehensive courses in programming, web development, data science, and more.',
       imageWidth: 120,
       imageHeight: 120
     },
     {
-      imageUrl: '/assets/img/services01.png',
+      imageUrl: '/assets/img/massage.png',
       title: 'Personal Development',
       description: 'Enhance your skills with our personal development courses designed for professional growth.',
       imageWidth: 100,
       imageHeight: 100
     },
     {
-      imageUrl: '/assets/img/services02.png',
+      imageUrl: '/assets/img/arm.png',
       title: 'Creative Arts',
       description: 'Explore your creativity with our arts and design courses from industry experts.',
       imageWidth: 110,

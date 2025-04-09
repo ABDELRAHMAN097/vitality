@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl z-10"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl z-10"></div>
       <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full relative z-40">
-        <div className="w-full flex flex-col gap-5 md:gap-10 py-10 md:py-2">
+        <div className="w-full flex flex-col gap-5 md:gap-10 py-10 md:py-2 pl-0 md:pl-10">
           <div className="p-2 bg-[#D0DAF5] max-w-[310px] mx-auto md:mx-0 rounded-2xl">
             <p className="text-[#360099] text-xl text-center font-medium">
               Through Expert Online Training

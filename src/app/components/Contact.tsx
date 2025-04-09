@@ -4,38 +4,38 @@ import EducationSection from "./EducationSection";
 import Link from "next/link";
 
 export const Contact = () => {
-  const statsData = [
-    {
-      value: "35+",
-      title: "Elevate your business",
-      subtitle: "our courses",
-    },
-    {
-      value: "987+",
-      title: "Elevate your business",
-      subtitle: "our courses",
-    },
-    {
-      value: "890+",
-      title: "Elevate your business",
-      subtitle: "our courses",
-    },
-    {
-      value: "77+",
-      title: "Elevate your business",
-      subtitle: "our courses",
-    },
-    {
-      value: "89+",
-      title: "Elevate your business",
-      subtitle: "our courses",
-    },
-    {
-      value: "245+",
-      title: "Elevate your business",
-      subtitle: "our courses",
-    },
-  ];
+  // const statsData = [
+  //   {
+  //     value: "35+",
+  //     title: "Elevate your business",
+  //     subtitle: "our courses",
+  //   },
+  //   {
+  //     value: "987+",
+  //     title: "Elevate your business",
+  //     subtitle: "our courses",
+  //   },
+  //   {
+  //     value: "890+",
+  //     title: "Elevate your business",
+  //     subtitle: "our courses",
+  //   },
+  //   {
+  //     value: "77+",
+  //     title: "Elevate your business",
+  //     subtitle: "our courses",
+  //   },
+  //   {
+  //     value: "89+",
+  //     title: "Elevate your business",
+  //     subtitle: "our courses",
+  //   },
+  //   {
+  //     value: "245+",
+  //     title: "Elevate your business",
+  //     subtitle: "our courses",
+  //   },
+  // ];
 
   const [activeTab, setActiveTab] = useState<number | null>(null);
 
@@ -73,8 +73,8 @@ export const Contact = () => {
     >
       <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
-      <div className="flex flex-col md:flex-row items-center justify-center px-4 w-full my-12 relative z-30">
-        <div className="w-full flex items-center justify-center my-10 md:my-2">
+      <div className="flex flex-col md:flex-row items-center justify-center px-10 w-full my-12 relative z-30">
+        {/* <div className="w-full flex items-center justify-center my-10 md:my-2">
           <div className="grid grid-cols-2 gap-6">
             {statsData.map((item, index) => (
               <div
@@ -91,7 +91,7 @@ export const Contact = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="w-full flex flex-col gap-5 md:gap-10 ">
           <div className="p-2 bg-[#D0DAF5] max-w-[280px] mx-auto md:mx-0 rounded-2xl">
