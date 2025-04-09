@@ -19,7 +19,7 @@ const Hero = () => {
             </p>
           </div>
           <h1 className="text-[#190C71] font-semibold text-center md:text-start text-xl md:text-5xl">
-            Comprehensive learning solutions designed to enhance
+            Comprehensive learning solutions designed to Enhance
             patient-centered care.
           </h1>
           <p className="text-center md:text-start text-slate-500 text-xl md:text-2xl">
