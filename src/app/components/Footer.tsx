@@ -9,36 +9,35 @@ const Footer = () => {
     <footer className="bg-gray-100 w-full text-gray-800 py-12 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 items-start">
           {/* Column 1 */}
           <div>
             <ul className="space-y-2">
               <li>
                 <Link href="https://vitalitylab.thinkific.com/users/sign_up" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
-                Sign up
+                  Sign up
                 </Link>
               </li>
               <li>
                 <Link href="https://vitalitylab.thinkific.com/pages/instructors" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
-                Instructors
+                  Instructors
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
-                Latest Researches
+                  Latest Researches
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
-                Upcoming Researches
+                  Upcoming Researches
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 2 - Empty for spacing */}
+          {/* Column 2 */}
           <div>
-            <h3 className="text-xl font-bold mb-4 invisible">Placeholder</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
@@ -68,18 +67,17 @@ const Footer = () => {
 
           {/* Column 4 - Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 invisible">Contact</h3>
             <ul className="space-y-2">
-              <li className="flex items-center justify-start">
-                <span className="mr-2"> <SlEnvolope className="text-[#6f55f2] font-bold text-2xl"/> </span>
+              <li className="flex items-start">
+                <span className="mr-2 mt-1"><SlEnvolope className="text-[#6f55f2] font-bold text-xl"/></span>
                 <span className="font-semibold">Email: info@vitalityptclinic.com</span>
               </li>
-              <li className="flex items-center justify-start">
-                <span className="mr-2"><HiOutlinePhone className="text-[#6f55f2] font-bold text-2xl" /> </span>
+              <li className="flex items-start">
+                <span className="mr-2 mt-1"><HiOutlinePhone className="text-[#6f55f2] font-bold text-xl"/></span>
                 <span className="font-semibold">Phone: +1 708-789-7774</span>
               </li>
-              <li className="flex items-center justify-start">
-                <span className="mr-2"><ImLocation2 className="text-[#6f55f2] font-bold text-2xl" /></span>
+              <li className="flex items-start">
+                <span className="mr-2 mt-1"><ImLocation2 className="text-[#6f55f2] font-bold text-xl"/></span>
                 <span className="font-semibold">
                   Address: 123 Learning Street, Knowledge City, EduCountry
                 </span>
