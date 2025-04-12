@@ -1,5 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import { SlEnvolope } from "react-icons/sl";
+import { HiOutlinePhone } from "react-icons/hi2";
+import { ImLocation2 } from "react-icons/im";
 
 const Footer = () => {
   return (
@@ -9,21 +12,25 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Column 1 */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Pions & Pricing</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-blue-600">
-                  Features
+                <Link href="https://vitalitylab.thinkific.com/users/sign_up" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
+                Sign up
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-blue-600">
-                  News & Blogs
+                <Link href="https://vitalitylab.thinkific.com/pages/instructors" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
+                Instructors
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-blue-600">
-                  Careers
+                <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
+                Latest Researches
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
+                Upcoming Researches
                 </Link>
               </li>
             </ul>
@@ -34,22 +41,22 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 invisible">Placeholder</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
                   Documentation
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
                   Papers
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-blue-600">
+                <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
                   Press Conferences
                 </Link>
               </li>
@@ -63,17 +70,17 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 invisible">Contact</h3>
             <ul className="space-y-2">
-              <li className="flex items-start">
-                <span className="mr-2">✉️</span>
-                <span>Email: support@vitalitylab.com</span>
+              <li className="flex items-center justify-start">
+                <span className="mr-2"> <SlEnvolope className="text-[#6f55f2] font-bold"/> </span>
+                <span className="font-semibold">Email: support@vitalitylab.com</span>
               </li>
-              <li className="flex items-start">
-                <span className="mr-2">📞</span>
-                <span>Phone: +123-456-7880</span>
+              <li className="flex items-center justify-start">
+                <span className="mr-2"><HiOutlinePhone className="text-[#6f55f2] font-bold" /> </span>
+                <span className="font-semibold">Phone: +1 708-789-7774</span>
               </li>
-              <li className="flex items-start">
-                <span className="mr-2">📍</span>
-                <span>
+              <li className="flex items-center justify-start">
+                <span className="mr-2"><ImLocation2 className="text-[#6f55f2] font-bold" /></span>
+                <span className="font-semibold">
                   Address: 123 Learning Street, Knowledge City, EduCountry
                 </span>
               </li>
@@ -89,13 +96,13 @@ const Footer = () => {
             </div>
 
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-blue-600">
+              <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
                 Terms of Service
               </Link>
-              <Link href="#" className="hover:text-blue-600">
+              <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
                 Privacy Policy
               </Link>
-              <Link href="#" className="hover:text-blue-600">
+              <Link href="#" className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline">
                 Cookies
               </Link>
             </div>

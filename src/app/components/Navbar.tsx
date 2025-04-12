@@ -6,6 +6,7 @@ import { RiCloseLargeFill } from "react-icons/ri";
 import { FaUserPlus, FaSignOutAlt } from "react-icons/fa";
 import Link from "next/link";
 import { useAuth } from "../context/AuthProvider "; // تأكد من المسار الصحيح
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,11 +72,11 @@ const Navbar = () => {
 
         <li>
           <a
-            href="#Services"
+            href=""
             className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline"
             onClick={handleNavLinkClick}
           >
-            States Approved
+            <Dropdown />
           </a>
         </li>
         <li>

@@ -42,23 +42,19 @@ export const Contact = () => {
   const faqItems = [
     {
       question: "Can I interact with instructors and other students?",
-      answer: ""
+      answer: "Yes! Our courses are designed to foster community and engagement. You'll have opportunities to interact with instructors through discussion boards, live Q&A sessions (select courses), and email support. Some courses also include peer discussion groups and collaborative activities."
     },
     {
       question: "What if I need help during the course?",
-      answer: ""
+      answer: "Support is always available. You can reach out to the instructor directly via the course platform. We also provide technical support and a course coordinator to assist you with any issues or questions."
     },
     {
       question: "Are there any prerequisites for enrolling in a course?",
-      answer: ""
-    },
-    {
-      question: "Can I get a refund if I'm not satisfied with the course?",
-      answer: ""
+      answer: "Prerequisites vary by course. Most are open to all licensed physical therapists and healthcare professionals, but some advanced topics may require the completion of a foundational course. Specific prerequisites, if any, are listed on each course’s registration page."
     },
     {
       question: "Will I receive a certificate upon completion?",
-      answer: "Yes, upon successful completion of a course, you will receive a certificate that you can download and share. The certificate verifies"
+      answer: "Absolutely. You'll receive a downloadable certificate of completion after successfully completing the course requirements. Most courses are also eligible for CEU credit—check individual course details for accreditation specifics."
     }
   ];
 
@@ -73,7 +69,7 @@ export const Contact = () => {
     >
       <div className="absolute top-0 left-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-200 opacity-50 rounded-full blur-3xl"></div>
-      <div className="flex flex-col md:flex-row items-center justify-center px-10 w-full my-12 relative z-30">
+      <div className="flex flex-col md:flex-row items-center justify-center px-10 w-full my-12 relative z-50">
         {/* <div className="w-full flex items-center justify-center my-10 md:my-2">
           <div className="grid grid-cols-2 gap-6">
             {statsData.map((item, index) => (
@@ -136,21 +132,21 @@ export const Contact = () => {
       {/*  */}
 
 
-        <div className="w-full flex flex-col items-center justify-center gap-5 py-8 md:py-10 my-5 md:my-10">
-            <h3 className="text-[#190C71] font-semibold text-center md:text-start text-xl md:text-5xl">Frequently Asked Questions</h3>
-            <p className="text-center text-slate-500 text-2x mx-1 md:mx-5">Pursue your problems with our diverse range of courses focused on lifestyle and holidays. From existing and gardening to photograph travel, our courses provide practical tips and inspiration for enjoying life to the future. Whether you re looking to develop a new hobby</p>
+        <div className="w-full flex flex-col items-center justify-center gap-5 py-8 md:py-10 my-5 md:my-10 relative z-50">
+            <h3 className="text-[#190C71] font-semibold text-center md:text-start text-xl md:text-5xl relative z-50">Frequently Asked Questions</h3>
+            <p className="text-center text-slate-500 text-2x mx-1 md:mx-5 relative z-50">Pursue your problems with our diverse range of courses focused on lifestyle and holidays. From existing and gardening to photograph travel, our courses provide practical tips and inspiration for enjoying life to the future. Whether you re looking to develop a new hobby</p>
         </div>
 
 
         {/*  */}
 
 
-        <div className="w-full mx-auto py-8 px-4">
-      <h2 className="text-3xl font-bold text-[#190C71] mb-8 text-center">
+        <div className="w-full mx-auto py-8 px-4 relative z-50">
+      <h2 className="text-3xl font-bold text-[#190C71] mb-8 text-center relative z-50">
         Frequently Asked Questions
       </h2>
       
-      <div className="space-y-4">
+      <div className="space-y-4 relative z-50">
         {faqItems.map((item, index) => (
           <div 
             key={index}
@@ -163,13 +159,13 @@ export const Contact = () => {
               <span className="text-lg font-semibold text-[#360099]">
                 {item.question}
               </span>
-              <span className="text-[#6f55f2] font-bold">
+              <span className="text-[#6f55f2] font-bold text-2xl">
                 {activeTab === index ? '−' : '+'}
               </span>
             </button>
             
             {activeTab === index && (
-              <div className="p-4 bg-[#F5F8FF] text-gray-700 border-t border-[#D0DAF5]">
+              <div className="p-4 bg-[#F5F8FF] text-gray-700 border-t border-[#D0DAF5] relative z-50">
                 {item.answer || (
                   <p className="text-gray-500">سيتم إضافة الإجابة قريباً</p>
                 )}
