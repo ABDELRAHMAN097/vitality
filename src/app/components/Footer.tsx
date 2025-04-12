@@ -72,7 +72,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center justify-start">
                 <span className="mr-2"> <SlEnvolope className="text-[#6f55f2] font-bold text-2xl"/> </span>
-                <span className="font-semibold">Email: support@vitalitylab.com</span>
+                <span className="font-semibold">Email: info@vitalityptclinic.com</span>
               </li>
               <li className="flex items-center justify-start">
                 <span className="mr-2"><HiOutlinePhone className="text-[#6f55f2] font-bold text-2xl" /> </span>
