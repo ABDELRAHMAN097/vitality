@@ -71,13 +71,7 @@ const Navbar = () => {
         </Link>
 
         <li>
-          <a
-            href=""
-            className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline"
-            onClick={handleNavLinkClick}
-          >
             <Dropdown />
-          </a>
         </li>
         <li>
           <a

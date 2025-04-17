@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { SlEnvolope } from "react-icons/sl";
 import { HiOutlinePhone } from "react-icons/hi2";
-import { ImLocation2 } from "react-icons/im";
+// import { ImLocation2 } from "react-icons/im";
 
 const Footer = () => {
   return (
@@ -76,12 +76,12 @@ const Footer = () => {
                 <span className="mr-2 mt-1"><HiOutlinePhone className="text-[#6f55f2] font-bold text-xl"/></span>
                 <span className="font-semibold">Phone: +1 708-789-7774</span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <span className="mr-2 mt-1"><ImLocation2 className="text-[#6f55f2] font-bold text-xl"/></span>
                 <span className="font-semibold">
                   Address: 123 Learning Street, Knowledge City, EduCountry
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

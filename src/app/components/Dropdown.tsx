@@ -55,7 +55,7 @@ const Dropdown = ({ options = ["Illinois"], onSelect }: DropdownProps) => {
               <li
                 key={option}
                 onClick={() => handleOptionClick(option)}
-                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                className="px-4 hover:bg-gray-100 cursor-pointer"
                 role="menuitem"
               >
                 {option}
