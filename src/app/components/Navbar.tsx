@@ -69,13 +69,12 @@ const Navbar = () => {
             Courses
           </li>
         </Link>
-
         <li>
             <Dropdown />
         </li>
         <li>
           <a
-            href="#Contact"
+            href="../sendEmail"
             className="hover:text-[#6f55f2] font-semibold py-2 md:py-0 block md:inline"
             onClick={handleNavLinkClick}
           >
