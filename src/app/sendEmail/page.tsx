@@ -3,13 +3,12 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 const sendEmail = () => {
-
   return (
     <div className="flex flex-col items-center justify-center gap-2 min-h-screen w-full">
       <Navbar />
-      <div 
-      className="max-w-6xl mx-auto px-3 py-1 bg-white border border-gray-200 rounded-lg shadow-md"
-      style={{ minHeight: `calc(100vh - 72px)` }}
+      <div
+        className="max-w-6xl mx-auto px-3 py-1 bg-white border border-gray-200 rounded-lg shadow-md"
+        style={{ minHeight: `calc(100vh - 72px)` }}
       >
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           Send us a message
@@ -24,14 +23,11 @@ const sendEmail = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left Side - Contact Info */}
           <div className="lg:w-1/2 space-y-6">
-           
-
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 Phone
               </h3>
-              <p className="text-gray-600">+1068-8883 8547</p>
-              <p className="text-gray-600">+1068-8883 8578</p>
+              <p className="text-gray-600">+1708-789-7774</p>
             </div>
 
             <div>
