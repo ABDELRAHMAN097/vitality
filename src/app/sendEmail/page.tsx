@@ -15,9 +15,7 @@ const sendEmail = () => {
         </h2>
 
         <p className="text-gray-600 mb-2">
-          If you have any work from me or any types of queries related to my
-          tutorial, you can send me message from here its my pleasure to help
-          you.
+         Have questions? The quickest way to get in touch with us is using our contact information, or just send us a messege!
         </p>
 
         <div className="flex flex-col lg:flex-row gap-8">
